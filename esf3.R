@@ -57,5 +57,5 @@ fs<-multiroot(estfc3,c(1,1))
 ss<-multiroot(estfc3,c(2,2))
 
 Y=c(3,5)
-V=estfc2(Y)
+V=estfc3(Y)
 sum(V)
