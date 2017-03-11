@@ -1,6 +1,6 @@
 estfc3<-function(Y) {
 
-  for (t in 1:1000) {
+  for (t in 1:10000) {
     x1=X[t]
     x2=X[t+1]
     n=1
@@ -24,7 +24,7 @@ estfc3<-function(Y) {
     g1=g1+h
   }
   
-  for (t in 1:1000) {
+  for (t in 1:10000) {
     x1=X[t]
     x2=X[t+1]
     n=2
@@ -52,7 +52,7 @@ estfc3<-function(Y) {
 }
 
 library(rootSolve)
-load("simu.RData")
+#load("simu.RData")
 fs<-multiroot(estfc3,c(1,1))
 ss<-multiroot(estfc3,c(2,2))
 
