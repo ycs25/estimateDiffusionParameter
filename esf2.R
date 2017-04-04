@@ -1,7 +1,7 @@
 estfc2<-function(Y) {
 
 # first function
-  for (t in 1:1000) {
+  for (t in 1:10000) {
     x1=X[t]
     x2=X[t+1]
     n=1
@@ -31,7 +31,7 @@ estfc2<-function(Y) {
   }
  
 # second function 
-  for (t in 1:1000) {
+  for (t in 1:10000) {
     x1=X[t]
     x2=X[t+1]
     n=2
@@ -52,7 +52,7 @@ estfc2<-function(Y) {
   }
  
 # third function 
-  for (t in 1:1000) {
+  for (t in 1:10000) {
     x1=X[t]
     x2=X[t+1]
     n=3
@@ -82,7 +82,6 @@ estfc2<-function(Y) {
 
 # solve with different starting point
 library(rootSolve)
-load("simu.RData")
 fs<-multiroot(estfc2,c(1,1,1))
 ss<-multiroot(estfc2,c(2,2,1))
 
