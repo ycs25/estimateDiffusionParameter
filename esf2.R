@@ -83,9 +83,9 @@ estfc2<-function(Y) {
 # solve with different starting point
 library(rootSolve)
 fs<-multiroot(estfc2,c(1,1,1))
-ss<-multiroot(estfc2,c(2,2,1))
+ss<-multiroot(estfc2,c(2,2,0.5))
 
 # plug "true" values into function
-Y=c(3,5,1)
+Y=c(2,2,0.5)
 V=estfc2(Y)
 sum(V)

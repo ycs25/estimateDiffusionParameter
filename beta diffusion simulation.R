@@ -1,4 +1,4 @@
-T = 100
+T = 1000
 dt = 0.01
 t = seq(0,T,dt)
 ##Wiener process
@@ -19,3 +19,4 @@ for (i in 1:N) {
   X[i]=x
 }
 X=c(alpha/(alpha+beta),X)
+mean(X)
