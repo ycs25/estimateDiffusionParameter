@@ -1,4 +1,4 @@
-T = 1000
+T = 100
 dt = 0.01
 t = seq(0,T,dt)
 ##Wiener process
